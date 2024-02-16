@@ -1,0 +1,91 @@
+#root{
+  background-color: #F0F2F5;
+}
+.app-container{
+  display: flex;
+}
+.content{
+  width: 100%;
+}
+
+.sidebar{
+  min-height: 100vh;
+  position: sticky;
+}
+.post_list_container{
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card{
+  margin: .5rem;
+  min-height: 12rem !important;
+  background-color: #FFFFFF !important;
+  padding: 1rem;
+}
+.post_insites{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.tag{
+  display: flex;
+  margin: 0 3px;
+  width: fit-content;
+}
+.like{
+  font-size: small;
+}
+
+
+.creat_post{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 60px;
+}
+.welcome_message{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20%;
+  font-size: 3rem;
+  flex-direction: column;
+}
+@keyframes bounce {
+  0%{
+    transform: translateY(0);
+  }
+  
+ 50% {
+    transform: translateY(-20px);
+
+    font-size: 1rem;
+
+  
+  }
+  100% {
+    transform: translateY(-20px);
+
+    font-size: 2rem;
+
+  
+  }
+}
+
+.fach-data{
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+  color: green;
+  animation: bounce 2s  ease-in-out infinite;
+
+}

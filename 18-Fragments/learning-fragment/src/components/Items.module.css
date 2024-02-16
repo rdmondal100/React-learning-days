@@ -1,0 +1,17 @@
+#css-item{
+ margin: 10px;
+ border-radius: 6px;
+ color: #00ff2a;
+ font-weight: bolder;
+ font-size: 20px;
+ 
+}
+
+.buy-now{
+width: auto;
+border: 1px solid gray;
+background-color: blue;
+float: right;
+  
+}
+

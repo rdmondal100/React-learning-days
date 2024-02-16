@@ -1,0 +1,24 @@
+body{
+  margin: 200px;
+}
+
+
+input{
+  width: 100%;
+  margin: 10px 23px;
+  
+}
+
+
+.kg-row{
+  margin: 15px 4px;
+
+}
+
+.kg-button{
+  min-width: 85px;
+  
+}
+/* .items-container{
+ 
+} */

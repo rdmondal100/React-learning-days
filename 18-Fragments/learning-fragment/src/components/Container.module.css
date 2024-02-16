@@ -1,0 +1,14 @@
+.container{
+  /* border: 2px solid gray; */
+  margin: 10px;
+  /* width:50% ; */
+  padding: 15px;
+  border-radius: 9px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:#F9F9F9;
+  border: 3px solid green;
+}

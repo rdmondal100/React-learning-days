@@ -1,0 +1,18 @@
+#root{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#calculator{
+  position: relative;
+  top: 10%;
+  border: 2px solid gray;
+  width: 214px;
+  border-radius: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+

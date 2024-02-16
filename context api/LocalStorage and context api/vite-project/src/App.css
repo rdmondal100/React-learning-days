@@ -1,0 +1,178 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+
+
+.blur-background {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+
+}
+
+.inputbox_poup{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.238);
+   backdrop-filter: blur(12px);
+  
+  -webkit-backdrop-filter: blur(12px); 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+ 
+  animation: fadeIn .6s linear forwards ; 
+}
+@keyframes fadeIn {
+  from {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+.cross-btn{
+  float: right;
+   border: none;
+   color: rgb(156, 27, 27);
+   background-color: rgba(238, 99, 99, 0.746);
+   height: 40px;
+   width: 40px; 
+   border-radius: 5px;
+   padding: 4px 4px;
+   font-size: 20px;
+}
+
+.cross-btn :hover{
+  color: rgb(249, 3, 3);
+  font-size:18px ;
+}
+.add-icon{
+
+  color: green;
+  background-color: #D8D0F7;
+  border-radius: 50px;
+  font-size: 25px;
+  box-shadow: inset 1px 2px 5px rgba(0, 128, 0, 0.459), inset -1px -1px 5px rgba(249, 249, 249, 0.64);
+  }
+
+
+  .delete-btn {
+
+    /* float: right; */
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border: none;
+    background-color: #D8D0F7;
+    color: red;
+    box-shadow: -2px -2px 5px rgb(255, 255, 255), 2px 2px 5px #000000b0;
+  
+  }
+  .edit-btn {
+  
+    /* float: right; */
+    position: absolute;
+    bottom: 5px;
+    right: 70px;
+    border: none;
+    background-color: #D8D0F7;
+    color: green;
+    box-shadow: -2px -2px 5px rgb(255, 255, 255), 2px 2px 5px #000000b0;
+  
+  }
+  
+  /* .index{
+   padding: 5px;
+   height: 30px;
+   background-color: rgb(170, 243, 171);
+   width: 30px;
+   border-radius: 50%;
+   position: absolute;
+   left: 50%;
+   top: -6px;
+   float:right;
+   font-size: medium;
+   font-weight: 700;
+   color: rgb(9, 141, 62);
+
+  } */
+  .todolist-container {
+    margin-top: 50px;
+    margin: 8px;
+    border-radius: 8px;
+    width: 280px;
+    height: 250px;
+    position: relative;
+    background-color: #D8D0F7;
+    box-shadow: -8px -8px 15px #ffffffe6, 8px 8px 18px #000000b0;
+    display: flex;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  
+  .checkbox{
+    width: 2rem;
+    margin: 5px 9px;
+    cursor: pointer;
+
+    }
+ 
+ .header_content{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+ }
+ .completed{
+  background: gainsboro;
+  text-decoration: line-through;
+ }
+.completed .showtodoinputbox{
+  background: gainsboro;
+
+}
+
+ .editable{
+  background:rgb(162, 220, 162) ;
+  transform: scale(1.05);
+  z-index: 5;
+ }
+.editable .showtodoinputbox{
+  background:rgb(162, 220, 162) ;
+
+}
+
+.show-todo{
+  margin-top: 25px;
+  justify-content: center;
+  text-align: center;
+  width: 250px;
+  height: 184px;
+  overflow: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  border: none;
+  background-color: #D8D0F7;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  outline: none;
+}

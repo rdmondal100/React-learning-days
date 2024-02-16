@@ -1,0 +1,51 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+
+
+.blur-background {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.552);
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+
+}
+
+.inputbox_poup{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.cross-btn{
+  float: right;
+   border: none;
+   color: red;
+   height: 40px;
+   width: 40px; 
+   border-radius: 5px;
+   padding: 4px 4px;
+   background-color: rgba(128, 128, 128, 0.352);
+   font-size: 20px;
+}
+
+.cross-btn :hover{
+  color: rgb(249, 3, 3);
+  font-size:15px ;
+}

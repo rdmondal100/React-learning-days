@@ -1,0 +1,46 @@
+.add-icon{
+
+color: green;
+background-color: #D8D0F7;
+border-radius: 50px;
+font-size: 25px;
+box-shadow: inset 1px 2px 5px rgba(0, 128, 0, 0.459), inset -1px -1px 5px rgba(249, 249, 249, 0.64);
+}
+
+#form-todo{
+  margin-top: 35px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+.input-date-container{
+  /* position: absolute; */
+  float: right;
+}
+#input-date{
+  margin: 0px 17px;
+  border-radius: 4px;
+  background-color: #D8D0F7;
+  box-shadow: -2px -2px 5px rgb(255, 255, 255), 1px 1px 5px #000000b0;
+  border: 1px transparent;
+}
+#input-todo{
+  outline: none;
+  caret-color: #985fff;
+  margin: 15px 13px;
+  border-radius: 4px;
+  border: none;
+  background-color: #D8D0F7;
+  box-shadow: inset 2px 3px 8px rgb(0 0 0 / 56%), inset -1px -2px 15px white;
+  height:250px ;
+  width: 300px;
+
+  padding-left: 15px;
+}
+
+.creat-todo{
+  margin-left: 20px;
+  box-shadow: -4px -4px 10px rgb(255, 255, 255), 4px 4px 15px #000000b0;
+}
