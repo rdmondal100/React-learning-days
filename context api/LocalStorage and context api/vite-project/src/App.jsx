@@ -80,7 +80,6 @@ function App() {
         dueDate,
         setdueDate,
       }}
-    
     >
       <AppTitile></AppTitile>
 

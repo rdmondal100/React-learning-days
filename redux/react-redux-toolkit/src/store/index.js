@@ -9,16 +9,16 @@ import { configureStore, createSlice } from '@reduxjs/toolkit'
 //creating slice
 
 //privacy slice
-const privacySlice= createSlice({
-  name:'privacy',
-  initialState:false,
-  reducers:{
-    toggle:(state)=>{
+const privacySlice = createSlice({
+  name: 'privacy',
+  initialState: false,
+  reducers: {
+    toggle: (state) => {
       console.log("Loggled")
-     
+
       return !state;
     },
-  
+
   }
 })
 //counter slice
@@ -26,19 +26,19 @@ const counterSlice = createSlice({
   name: 'counter',
   initialState: { counterValue: 0 },
   reducers: {
-    increment: (state,action) => {
-       console.log("increment",action,state)
-       state.counterValue++;
+    increment: (state, action) => {
+      console.log("increment", action, state)
+      state.counterValue++;
     },
-    dicrement: (state,action) => {
-       console.log("dicrement",action,state)
-       state.counterValue--;
+    dicrement: (state, action) => {
+      console.log("dicrement", action, state)
+      state.counterValue--;
     },
-    add: (state,action) => {
+    add: (state, action) => {
       console.log(action.payload.num)
       console.log(state.counterValue)
-       console.log("add",action,state)
-       state.counterValue+= Number(action.payload.num)
+      console.log("add", action, state)
+      state.counterValue += Number(action.payload.num)
     },
   }
 })
@@ -73,11 +73,13 @@ const counterSlice = createSlice({
 // }
 
 // const cunterStore = createStore(counterReducer)
-const cunterStore = configureStore({ reducer:{counter:counterSlice.reducer,
-privacy:privacySlice.reducer,
-}})
+const cunterStore = configureStore({
+  reducer: {
+    counter: counterSlice.reducer,
+    privacy: privacySlice.reducer,
+  }
+})
 
 export default cunterStore;
-
-export const counterAction=counterSlice.actions
-export const privacyAction=privacySlice.actions
+export const counterAction = counterSlice.actions
+export const privacyAction = privacySlice.actions
